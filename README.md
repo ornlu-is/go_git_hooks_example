@@ -1,3 +1,3 @@
-# go_git_hooks_example
+# Go git hooks example
 
 A simple example on how to use Git hooks for Go development.
