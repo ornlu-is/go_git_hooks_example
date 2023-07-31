@@ -2,7 +2,7 @@
 
 import subprocess
 
-process_output = subprocess.run(["go", "test", "github.com/ornlu-is/go_git_hooks_example"], capture_output=True, text=True)
+process_output = subprocess.run(["go", "test", "github.com/ornlu-is/go_git_hooks_example"], text=True)
 
 #import webbrowser
 #webbrowser.open('http://www.example.com')
