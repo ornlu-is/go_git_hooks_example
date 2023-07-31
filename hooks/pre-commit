@@ -1,14 +1,8 @@
 #!/usr/bin/python3
 
-import sys
 import subprocess
 
-print("running go test git hook")
-process_output = subprocess.run(["go", "test", "github.com/ornlu-is/go_git_hooks_example"], capture_output=True)
-print(process_output)
-print(f"exiting with code {process_output.returncode}")
-
-sys.exit(process_output.returncode) 
+process_output = subprocess.run(["go", "test", "github.com/ornlu-is/go_git_hooks_example"], capture_output=True, text=True)
 
 #import webbrowser
 #webbrowser.open('http://www.example.com')
