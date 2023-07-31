@@ -10,7 +10,7 @@ func TestIsEven(t *testing.T) {
 	}{
 		{
 			name:           "given an even number returns true",
-			givenNumber:    6661,
+			givenNumber:    666,
 			expectedResult: true,
 		},
 		{

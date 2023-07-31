@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 
+import sys
 import subprocess
 
-process_output = subprocess.run(["go", "test", "github.com/ornlu-is/go_git_hooks_example"], text=True)
+process_output = subprocess.run(["go", "test", "github.com/ornlu-is/go_git_hooks_example"], text=True, capture_output=True)
+print(process_output.stdout)
+sys.exit(process_output.returncode)
 
 #import webbrowser
 #webbrowser.open('http://www.example.com')
